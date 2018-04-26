@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var s = "Hello"
+	var s = "Hello，世界"
 	fmt.Println(reverseString(s))
 }
 
