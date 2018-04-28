@@ -21,7 +21,10 @@ Do not allocate extra space for another array, you must do this
 by modifying the input array in-place with O(1) extra memory.
 */
 func removeDuplicates(nums []int) int {
-	size := 0
+	if len(nums) == 0{    //length of slice is zero,return 0
+		return 0
+	}
+	size := 0  
 	for i,_ := range nums  {
 		if nums[size] != nums[i] {
 			size+=1
